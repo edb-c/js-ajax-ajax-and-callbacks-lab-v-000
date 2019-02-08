@@ -20,14 +20,19 @@
   </head>
   <body>
     <main id="main">
-      <input id="searchTerms" type="text">
-      <a href="#" onclick="searchRepositories()">Search</a>
       <div id="errors"></div>
+       
     </main>
     <div class="flexbox-container">
       <div>
         <h3>Repositories</h3>
-        <div id="results"></div>
+        <input type="text" name="name" id ="searchTerms"> <br>
+        <a href="#" onclick="searchRepositories()">Search Repositories</a>
+
+        <div id="results">
+
+        </div>
+        
       </div>
       <div>
         <h3>Details</h3>
@@ -36,5 +41,6 @@
     </div>
     <script src="jquery-3.1.0.min.js"></script>
     <script src="index.js"></script>
+    
   </body>
 </html>
